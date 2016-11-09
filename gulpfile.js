@@ -5,16 +5,10 @@ var sourcemaps = require('gulp-sourcemaps');
 var rename = require('gulp-rename');
 
 // Sass
-gulp.task('sass', function() {
+gulp.task('css', function() {
 	return gulp.src('assets/scss/custom.scss')
 	      .pipe(sass())
-	      .pipe(gulp.dest('assets/css'))
-});
-
-// Minify CSS
-gulp.task('minify-css', function() {
-  return gulp.src('assets/css/custom.css')
-        .pipe(sourcemaps.init())
+	      .pipe(sourcemaps.init())
         .pipe(cleanCSS())
         .pipe(sourcemaps.write())
         .pipe(rename('custom.min.css'))
@@ -23,5 +17,5 @@ gulp.task('minify-css', function() {
 
 // Watch
 gulp.task('watch', function() {
-     gulp.watch('assets/scss/*.scss', ['sass', 'minify-css']);
+     gulp.watch('assets/scss/*.scss', ['css']);
 });

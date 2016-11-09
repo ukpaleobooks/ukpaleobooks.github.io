@@ -1,0 +1,26 @@
+header{
+	height:262px;
+	background:url(../img/header.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	-webkit-background-size:cover;
+	-moz-background-size:		cover;
+	-o-background-size:			cover;
+	background-size:				cover;
+	padding:20px;
+
+	h1{
+		color:#fff;
+		margin:0;
+		font-family:'Boogaloo', cursive;
+		font-size:58px;
+		text-shadow:0 0 4px #000000;
+	}
+
+	h2{
+		color:#fff;
+		font-size:18px;
+		margin:15px 0 0 0;
+		width:50%;
+	}
+}
