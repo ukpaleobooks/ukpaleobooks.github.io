@@ -115,7 +115,7 @@ a:hover{
 */
 
 header{
-	height:162px;
+	height:auto;
 	background:url(../img/header.jpg);
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -123,13 +123,9 @@ header{
 	-moz-background-size:		cover;
 	-o-background-size:			cover;
 	background-size:				cover;
-	padding:20px;
+	padding:30px;
 	margin:0 auto 30px;
 	max-width:1200px;
-
-	@include media-sm(){
-		height:auto;
-	}
 
 	h1{
 		color:#fff;
