@@ -205,6 +205,10 @@ header{
 			background:#fff;
 			border-bottom:1px solid #ccc;
 
+			@include media-sm(){
+				padding:15px;
+			}
+
 			h2{
 				color:#443B4E;
 				margin:0 0 5px;
